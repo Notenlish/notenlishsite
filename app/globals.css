@@ -22,18 +22,20 @@
   --sh-entity: #e25a1c;
 }
 
+.light .background-gradient {
+  background-image: linear-gradient(to bottom right, oklch(100% 0 0), oklch(83% 0 0));
+}
+.dark .background-gradient {
+  background-image: linear-gradient(to bottom right, oklch(31% 0 0), oklch(14.5% 0 0));
+}
+
 .light .prose a:hover {
   text-decoration-color: oklch(40% 0 0) !important;
 }
 
-.light {
-  background-image: linear-gradient(to bottom right, oklch(100% 0 0), oklch(83% 0 0));
-}
-
 /* Dark theme colors */
 .dark {
-  background-color: #111010;
-  background-image: linear-gradient(to bottom right, oklch(31% 0 0), oklch(14.5% 0 0));
+  background-color: transparent;
   --sh-class: #4c97f8;
   --sh-identifier: white;
   --sh-sign: #8996a3;

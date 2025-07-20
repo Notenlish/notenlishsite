@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: metaData.description,
   verification: { google: "Gurmrqg74NHiG1yD0S6seTXKXN1R3bL7-aVK38bjBNk" },
-  
+
   openGraph: {
     images: metaData.ogImage,
     title: metaData.title,
@@ -81,7 +81,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[624px] w-full">
+          <div className="fixed top-0 left-0 w-full h-full -z-10 background-gradient"></div>
+          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex bg-transparent flex-col px-6 sm:px-4 md:px-0 max-w-[624px] w-full">
             <Navbar />
             {children}
             <Footer />
