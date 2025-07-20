@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   },
   description: metaData.description,
   verification: { google: "Gurmrqg74NHiG1yD0S6seTXKXN1R3bL7-aVK38bjBNk" },
+  
   openGraph: {
     images: metaData.ogImage,
     title: metaData.title,
