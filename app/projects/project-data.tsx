@@ -13,10 +13,10 @@ export const projects: Project[] = [
     url: "https://github.com/Notenlish/anifetch",
   },
   {
-    title: "Noten.co",
+    title: "This website",
     year: 2025,
     description: "My personal website and blog",
-    url: "https://noten.co/",
+    url: "https://noten.vercel.app/",
   },
   {
     title: "Itch.io Analytics",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     title: "Pygame-ECS",
     year: 2024,
     description: "A simple ECS library for Pygame.",
-    url: "https://github.com/Notenlish/pygame-ecs",
+    url: "https://github.com/Notenlish/pygame_ecs",
   },
   {
     title: "Bilateral Maker",
