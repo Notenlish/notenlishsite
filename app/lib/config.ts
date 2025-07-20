@@ -1,6 +1,6 @@
 export const metaData = {
-  baseUrl: "https://noten.co/",
-  title: "Noten.co",
+  baseUrl: "https://notenlish.vercel.app/",
+  title: "Notenlish",
   name: "Notenlish",
   ogImage: "/opengraph-image.png",
   description:
