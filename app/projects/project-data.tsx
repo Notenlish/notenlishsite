@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "This website",
     year: 2025,
     description: "My personal website and blog",
-    url: "https://noten.vercel.app/",
+    url: "https://notenlish.vercel.app/",
   },
   {
     title: "Itch.io Analytics",
