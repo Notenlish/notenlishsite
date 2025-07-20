@@ -22,9 +22,18 @@
   --sh-entity: #e25a1c;
 }
 
+.light .prose a:hover {
+  text-decoration-color: oklch(40% 0 0) !important;
+}
+
+.light {
+  background-image: linear-gradient(to bottom right, oklch(100% 0 0), oklch(83% 0 0));
+}
+
 /* Dark theme colors */
 .dark {
   background-color: #111010;
+  background-image: linear-gradient(to bottom right, oklch(31% 0 0), oklch(14.5% 0 0));
   --sh-class: #4c97f8;
   --sh-identifier: white;
   --sh-sign: #8996a3;
@@ -34,6 +43,14 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+}
+
+.dark .profile {
+  border-color: oklch(33% 0 0);
+  border-width: 2px;
+  box-shadow: 0 0 4px 1px oklch(33% 0 0);
+}
+.profile {
 }
 
 html {

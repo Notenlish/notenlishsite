@@ -7,15 +7,33 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Mithril AI",
-    year: 2024,
-    description: "Open science AI resarch lab",
-    url: "https://github.com/mithrilai",
+    title: "Anifetch",
+    year: 2025,
+    description: "Animated Neofetch",
+    url: "https://github.com/Notenlish/anifetch",
   },
   {
-    title: "OpenDeepLearning",
-    year: 2023,
-    description: "Open source AI education resources",
-    url: "https://opendeeplearning.xyz/",
+    title: "Noten.co",
+    year: 2025,
+    description: "My personal website and blog",
+    url: "https://noten.co/",
   },
+  {
+    title: "Itch.io Analytics",
+    year: 2024,
+    description: "Analytics for Itch.io jam games.",
+    url: "https://itchanalytics.vercel.app/",
+  },
+  {
+    title: "Pygame-ECS",
+    year: 2024,
+    description: "A simple ECS library for Pygame.",
+    url: "https://github.com/Notenlish/pygame-ecs",
+  },
+  {
+    title: "Bilateral Maker",
+    year: 2024,
+    description: "A tool for converting music to be bilateral.",
+    url: "https://bilateral-maker.vercel.app/",
+  }
 ];

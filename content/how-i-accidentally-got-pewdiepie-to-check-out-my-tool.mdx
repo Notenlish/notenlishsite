@@ -1,9 +1,54 @@
 ---
-title: "Custom MDX Examples"
-publishedAt: "2024-08-11"
-summary: "Nextfolio custom MDX examples."
-tags: "Custom MDX, Web development"
+title: "How I accidentally got Pewdiepie to check out my tool"
+publishedAt: "2025-07-20"
+summary: "I made a simple python cli to make neofetch animated."
+tags: "Python, CLI, Game Development"
 ---
+
+A few months ago, I saw Pewdiepie's video on switching to linux. Seeing how cool it looked, I decided to give it a try and installed Mint.
+
+In the video, he showcases his Linux rice. He also shows his neofetch setup with an animated terminal art. I thought it was pretty cool, and I wanted to recreate it.
+
+I'm sure you've seen the [neofetch](https://github.com/dylanaraps/neofetch) tool before. It's a simple tool that displays system information in a pretty way. 
+
+I tried to use neofetch to render a video as an animated terminal art, but I realized that it didn't support videos or gifs. So, I decided to make my own cli tool to do it.
+
+## Making the tool
+
+I first started by researching how to make a terminal art. With the help of ChatGPT, I learnt about [chafa](https://github.com/hpjansson/chafa), a tool to convert images to terminal art.
+
+I then got FFMPEG to split the video into it's individual frames. With the frames, I could use chafa to convert them to terminal art. Then, with the help of ChatGPT, I wrote a bash script to loop through the frames and write them to the terminal.
+
+And, it actually worked! I was able to render any kind of video as an animated terminal art. I decided to expand upon the tool, and make it more customizable. I added the ability to change the width and height of the terminal art, the framerate of the animation and allow users to give their own arguments to chafa, for customizing the ascii art.
+
+I then made a video showcasing the tool, and uploaded it to YouTube. I simply just showcased the tool, and how it worked. After a few days, I got a notification from YouTube about a new comment I received. It was this:
+
+<Image
+  src="/blog/pewdiepie-comment.png"
+  alt="Pewdiepie's comment"
+  width={640}
+  height={360}
+/>
+
+I don't exactly know how that happened, but my theory is that Youtube's algorithm figured out Pewdiepie was mentioned in the video, and then sent him a notification. And he checked the video out.
+
+## The aftermath
+
+It has been a few months since I've uploaded the video, and as it currently stands, it has around 70 thousand views. I've also developed the tool further, added caching, sound support. I also released another video with it, where I played bad apple with it( And no, I'm not the first person to do it, here's the first one: [BadAppleFetch](https://github.com/ar1ja/badapplefetch) ). 
+
+The repo currently has around 400 stars and honestly, I'm pretty happy with that. I've also been able to get some cool people to work on the project with me. I'm planning on making a 1.0 release in the future, with a few more features.
+
+I've attached a link to the tool below, along with both mine and Pewdiepie's video. Feel free to check them out.
+
+<a href="https://github.com/Notenlish/anifetch" target="_blank">
+![Anifetch Repo](https://opengraph.githubassets.com/6140cf162e16eeabfe9b9ae462874e4cfd3865d1df76c67a813732beb87a20a8/Notenlish/anifetch)
+</a>
+
+<YouTube videoId="pVI_smLgTY0" />
+
+<YouTube videoId="4yAyxKt8QuY" />
+
+
 
 Nextfolio uses [custom MDX](https://github.com/1msirius/Nextfolio/blob/main/app/components/mdx.tsx) for blog posts, making it easy to include JSX components such as interactive embeds, charts, or alerts directly in your markdown content.
 
