@@ -2,11 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "./components/nav";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./lib/config";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${metaData.title}`,
   },
   description: metaData.description,
+  verification: { google: "Gurmrqg74NHiG1yD0S6seTXKXN1R3bL7-aVK38bjBNk" },
   openGraph: {
     images: metaData.ogImage,
     title: metaData.title,
@@ -84,8 +84,9 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
-            <Analytics />
-            <SpeedInsights />
+            <GoogleAnalytics gaId="G-MFQT989JVX" />
+            {/*<Analytics />*/}
+            {/* <SpeedInsights /> */}
           </main>
         </ThemeProvider>
       </body>
