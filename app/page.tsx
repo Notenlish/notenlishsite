@@ -27,7 +27,7 @@ export default function Page() {
         <p>
           I use Python and TypeScript generally. I've mostly dabbled with
           Next.js, React, and Tailwind CSS. I also have experience with Django
-          and Flask.
+          and FastApi.
         </p>
         <p>
           You can find me on{" "}
