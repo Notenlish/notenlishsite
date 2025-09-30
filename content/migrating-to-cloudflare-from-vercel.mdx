@@ -1,0 +1,82 @@
+---
+title: "Migrating to CloudFlare From Vercel"
+publishedAt: "2025-09-30"
+summary: "A simple guide on migrating to Cloudflare."
+tags: "Cloudflare, hosting, Vercel"
+---
+
+Yesterday, while checking twitter, I came across [this post](https://x.com/rauchg/status/1972669025525158031) by Guillermo Rauch, the CEO of Vercel. Now, I'm not going to talk much about what Guillermo did, but after seeing this post, I decided to migrate my Next.js projects away from Vercel.
+
+After a bit of chit-chat with ChatGPT, I decided to go with Cloudflare as it offers a [generous free tier](https://pages.cloudflare.com/) and also has support for Workers too, just like serverless functions.
+
+To get started with migrations, you first need to have an account in [Cloudflare](https://dash.cloudflare.com). After creating an account, do 
+`cd project-folder` to move into your project folder on your terminal.
+
+The first package you need to install is 
+`npm install -g wrangler`.
+This is the cli for managing cloudflare workers. Then, you need to login to your account via 
+`wrangler login`.
+This will open up a tab on your browser for you to authorize wrangler. 
+
+After authorizing wrangler, install this package:
+
+`npm install -D @cloudflare/next-on-pages @cloudflare/workers-types`
+
+Now we can get started with actually modifying the code.
+
+## Modifying the code
+
+Add a TOML file called `wrangler.toml`:
+
+```toml
+name = "Project Name"
+compatibility_date = "2025-09-30"  # set this to your current date
+
+[build]
+command = "npx @cloudflare/next-on-pages"
+```
+
+you will also need to modify your `next.config.ts` too:
+
+```ts
+const nextConfig: NextConfig = {
+  /* config options here */
+  output:"standalone"  // add this line
+};
+```
+
+You might want to use export mode instead if you want, but that depends on what you want to do.
+
+Note that for every non-static route you have you will need to add this line to the top:
+
+```ts
+export const runtime = 'edge';
+```
+
+## Deployment and Dev Mode
+
+Use this command to initialise the project:
+
+```bash
+wrangler pages project create PROJECT_NAME
+```
+
+Use this to build the project:
+
+```bash
+npx @cloudflare/next-on-pages
+```
+
+You can use `npm run dev` to use dev mode for the project.
+
+For deployment, use this command:
+
+```bash
+wrangler pages deploy .vercel/output/static
+```
+
+Please note that when you create a new Next.js project on Cloudflare, you will need to go to its 
+settings --> variables and secrets --> runtime --> compatibility flags and then add 
+`nodejs_compat` flag for both `Preview` and `Production` modes.
+
+And that's pretty much it. I hope this guide was helpful to you.
