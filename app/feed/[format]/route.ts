@@ -3,6 +3,9 @@ import { getBlogPosts } from "app/lib/posts";
 import { metaData } from "app/lib/config";
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
+/*
 export async function generateStaticParams() {
   return [
     { format: "rss.xml" },
@@ -10,6 +13,7 @@ export async function generateStaticParams() {
     { format: "feed.json" },
   ];
 }
+*/
 
 export async function GET(
   _: Request,

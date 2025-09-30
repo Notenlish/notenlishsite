@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { socialLinks } from "./lib/config";
-import Script from "next/script";
 import BuyMeACoffe from "./components/bmc";
 
 export default function Page() {
