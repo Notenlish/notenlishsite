@@ -1,5 +1,5 @@
 ---
-title: "Migrating to CloudFlare From Vercel"
+title: "Migrating from Vercel to Cloudflare"
 publishedAt: "2025-09-30"
 summary: "A simple guide on migrating to Cloudflare."
 tags: "Cloudflare, hosting, Vercel"
@@ -78,5 +78,7 @@ wrangler pages deploy .vercel/output/static
 Please note that when you create a new Next.js project on Cloudflare, you will need to go to its 
 settings --> variables and secrets --> runtime --> compatibility flags and then add 
 `nodejs_compat` flag for both `Preview` and `Production` modes.
+
+Also, since Cloudflare pages use edge runtimes, some modules which were available on vercel may not be available to you, in that case you might need to change your dependencies.
 
 And that's pretty much it. I hope this guide was helpful to you.
