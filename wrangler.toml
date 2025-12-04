@@ -1,5 +1,5 @@
-name = "Notenlish"
-compatibility_date = "2025-09-30"  # set this to your current date
+name = "notenlish"
+compatibility_date = "2025-12-04"  # set this to your current date
 
 [build]
 command = "npx @cloudflare/next-on-pages"

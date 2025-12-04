@@ -20,8 +20,8 @@ export default function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         <p>
           I am Notenlish, I create projects and write about them here. Most of
-          my experience is related to game development, but I also have
-          experience with web development.
+          my experience is related to web development, but I also have
+          experience with game development.
         </p>
         <p>
           I use Python and TypeScript generally. I've mostly dabbled with
@@ -30,10 +30,13 @@ export default function Page() {
         </p>
         <p>
           You can find me on{" "}
+          {/*
           <a href={socialLinks.twitter} target="_blank">
             Twitter
           </a>{" "}
-          and{" "}
+          and
+          {" "}
+          */}
           <a href={socialLinks.github} target="_blank">
             GitHub
           </a>
@@ -47,7 +50,9 @@ export default function Page() {
           page.
         </p>
       </div>
-      <BuyMeACoffe />
+      {/* 
+        <BuyMeACoffe />
+      */}
     </section>
   );
 }
