@@ -7,6 +7,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Vscode Ext Downloader",
+    year:2026,
+    description:"Incredibly basic tool to download vscode extensions.",
+    url:"https://vscode-ext-downloader.pages.dev/"
+  },
+  {
     title: "Anifetch",
     year: 2025,
     description: "Animated Neofetch",

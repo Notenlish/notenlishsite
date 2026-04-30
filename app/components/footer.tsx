@@ -25,7 +25,7 @@ function SocialLink({ href, icon: Icon }) {
 function SocialLinks() {
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
+      {/* <SocialLink href={socialLinks.twitter} icon={FaXTwitter} /> */}
       <SocialLink href={socialLinks.github} icon={FaGithub} />
       <SocialLink href={socialLinks.youtube} icon={FaYoutube} />
       {/* <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
@@ -43,14 +43,19 @@ export default function Footer() {
   return (
     <small className="block lg:mt-24 mb-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
       <time>© {YEAR}</time>{" "}
-      <a
+      {/* <a
         className="no-underline"
         href={socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
       >
         {metaData.title}
-      </a>
+      </a> */}
+      <span
+        className="no-underline"
+      >
+        {metaData.title}
+      </span>
       <style jsx>{`
         @media screen and (max-width: 480px) {
           article {

@@ -5,17 +5,17 @@ import BuyMeACoffe from "./components/bmc";
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      {/* <a href={socialLinks.twitter} target="_blank"> */}
         <Image
           src="/profile.png"
           alt="Profile photo"
-          className="profile rounded-full block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
+          className="profile rounded-full block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale"
           unoptimized
           width={160}
           height={160}
           priority
         />
-      </a>
+      {/* </a> */}
       <h1 className="mb-8 text-2xl font-medium">Hello!</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
@@ -40,7 +40,8 @@ export default function Page() {
           <a href={socialLinks.github} target="_blank">
             GitHub
           </a>
-          . Contact me via the <a href="/contact">Contact</a> page.
+          . 
+          {/* Contact me via the <a href="/contact">Contact</a> page. */}
         </p>
         <p>
           I also have an{" "}
@@ -50,9 +51,9 @@ export default function Page() {
           page.
         </p>
       </div>
-      {/* 
-        <BuyMeACoffe />
-      */}
+      
+      <BuyMeACoffe />
+     
     </section>
   );
 }
