@@ -32,9 +32,9 @@ function SocialLinks() {
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} /> */}
       
-      <a className="hover:text-neutral-600 transition-colors duration-100 dark:hover:text-neutral-400" href="/rss.xml" target="_self">
+      {/* <a className="hover:text-neutral-600 transition-colors duration-100 dark:hover:text-neutral-400" href="/rss.xml" target="_self">
         <FaRss />
-      </a>
+      </a> */}
     </div>
   );
 }
