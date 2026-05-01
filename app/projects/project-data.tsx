@@ -7,9 +7,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Cool Emu",
+    year:2026,
+    description:"Web based retro emulator",
+    url:"https://cool-emu.pages.dev/"
+  },
+  {
     title: "Vscode Ext Downloader",
     year:2026,
-    description:"Incredibly basic tool to download vscode extensions.",
+    description:"Incredibly basic tool to download vscode extensions",
     url:"https://vscode-ext-downloader.pages.dev/"
   },
   {
