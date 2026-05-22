@@ -7,6 +7,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Static Shader",
+    year:2026,
+    description:"Minecraft shader attempt",
+    url:"https://modrinth.com/shader/static-shader"
+  },
+  {
     title: "Cool Emu",
     year:2026,
     description:"Web based retro emulator",
@@ -28,7 +34,7 @@ export const projects: Project[] = [
     title: "This website",
     year: 2025,
     description: "My personal website and blog",
-    url: "https://notenlish.vercel.app/",
+    url: "https://notenlish.com/",
   },
   {
     title: "Itch.io Analytics",
