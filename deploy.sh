@@ -8,5 +8,5 @@ npm run build
 sudo rm -rf /var/www/notenlish
 sudo mkdir -p /var/www
 sudo mkdir -p /var/www/notenlish
-sudo cp ./out /var/www/notenlish -r
+sudo cp -r ./out/. /var/www/notenlish/
 echo "done"
