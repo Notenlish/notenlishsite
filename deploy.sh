@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+sudo apt update
+sudo apt install npm
 git fetch
 git pull
 npm ci
