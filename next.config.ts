@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
   trailingSlash: true, // makes it generate html in /[page]/index.html instead of /[page].html
+  images: {
+    unoptimized: true
+  }
   /*
   async rewrites() {
     return [
