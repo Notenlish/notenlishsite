@@ -6,4 +6,6 @@ git pull
 npm ci
 npm run build
 rm -rf /var/www/notenlish
+mkdir -p /var/www
+mkdir -p /var/www/notenlish
 cp ./out /var/www/notenlish -r
