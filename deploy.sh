@@ -5,7 +5,7 @@ git fetch
 git pull
 npm ci
 npm run build
-rm -rf /var/www/notenlish
-mkdir -p /var/www
-mkdir -p /var/www/notenlish
-cp ./out /var/www/notenlish -r
+sudo rm -rf /var/www/notenlish
+sudo mkdir -p /var/www
+sudo mkdir -p /var/www/notenlish
+sudo cp ./out /var/www/notenlish -r
