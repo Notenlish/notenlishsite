@@ -9,3 +9,4 @@ sudo rm -rf /var/www/notenlish
 sudo mkdir -p /var/www
 sudo mkdir -p /var/www/notenlish
 sudo cp ./out /var/www/notenlish -r
+echo "done"
