@@ -7,6 +7,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Silence Armor Trim Finder",
+    year:2026,
+    description:"Easily find Silence Armor Trim",
+    url:"https://notenlish.com/silence-trim-finder"
+  },
+  {
     title: "Static Shader",
     year:2026,
     description:"Minecraft shader attempt",
