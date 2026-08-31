@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./lib/config";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,11 +56,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
       <head>
-        <script async src="https://plausible.notenlish.com/js/pa-YLnAQ3oxn9ML8RSgDZQsK.js"></script>
-        <script>
-          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-          plausible.init()
-        </script>
+        <Script
+          strategy="afterInteractive" // maybe lazyload?
+          src="https://plausible.notenlish.com/js/pa-YLnAQ3oxn9ML8RSgDZQsK.js"
+        ></Script>
+        <Script>
+          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()`}
+        </Script>
       </head>
       <body className="antialiased flex flex-col items-center justify-center mx-auto lg:pt-8 min-h-[100vh] overflow-h-hidden">
         <ThemeProvider
