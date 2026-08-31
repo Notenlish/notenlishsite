@@ -55,24 +55,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
       <head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          href="/rss.xml"
-          title="RSS Feed"
-        />
-        <link
-          rel="alternate"
-          type="application/atom+xml"
-          href="/atom.xml"
-          title="Atom Feed"
-        />
-        <link
-          rel="alternate"
-          type="application/feed+json"
-          href="/feed.json"
-          title="JSON Feed"
-        />
+        <script async src="https://plausible.notenlish.com/js/pa-9a-C1-W2rBU39H70WEeo8.js"></script>
+        <script>
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        </script>
       </head>
       <body className="antialiased flex flex-col items-center justify-center mx-auto lg:pt-8 min-h-[100vh] overflow-h-hidden">
         <ThemeProvider
