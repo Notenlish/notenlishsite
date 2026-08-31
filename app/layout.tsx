@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
       <head>
-        <script async src="https://plausible.notenlish.com/js/pa-9a-C1-W2rBU39H70WEeo8.js"></script>
+        <script async src="https://plausible.notenlish.com/js/pa-YLnAQ3oxn9ML8RSgDZQsK.js"></script>
         <script>
           window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
           plausible.init()
